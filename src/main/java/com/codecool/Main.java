@@ -12,7 +12,7 @@ public class Main {
     }
 
     // O(n^2)
-    private static int findMostOccurringElement1(List<Integer> elements) {
+    public static int findMostOccurringElement1(List<Integer> elements) {
         int maxOccurrences = 0;
         int maxValue = -1;
 
@@ -37,7 +37,7 @@ public class Main {
     }
 
     // O(n*log(n))
-    private static int findMostOccurringElement2(List<Integer> elements) {
+    public static int findMostOccurringElement2(List<Integer> elements) {
         Collections.sort(elements);
 
         int maxOccurrences = 0;
@@ -61,7 +61,7 @@ public class Main {
     }
 
     // O(n)
-    private static int findMostOccurringElement3(List<Integer> elements) {
+    public static int findMostOccurringElement3(List<Integer> elements) {
 
         Map<Integer, Integer> elementToOccurrences = new HashMap<>();
         for (int element : elements) {
